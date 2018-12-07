@@ -1,5 +1,5 @@
 def binary_search(array, target):
-    li, hi = 0, len(array)
+    li, hi = 0, len(array) - 1
     while li <= hi:
         mi = (li + hi) // 2
         val = array[mi]
