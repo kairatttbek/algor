@@ -4,7 +4,7 @@ def binary_search(array, target):
         mi = (li + hi) // 2
         val = array[mi]
         if val == target:
-            return val
+            return mi
         elif val > target:
             hi = mi - 1
         else:
