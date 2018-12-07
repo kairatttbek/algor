@@ -1,2 +1,12 @@
 def binary_search(array, target):
-    return -1
+    li, hi = 0, len(array)
+    while li <= hi:
+        mi = (li + hi) // 2
+        val = array[mi]
+        if val == target:
+            return val
+        elif val > target:
+            hi = mi - 1
+        else:
+            li = mi + 1
+    return None
