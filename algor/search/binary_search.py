@@ -15,3 +15,20 @@ Complexity: O(log n)
         else:
             li = mi + 1
     return None
+
+
+def recur_binary_search(array, target, li, hi):
+    """
+Recursive binary search
+
+Complexity: O(log n)
+    """
+    if li > hi:
+        return -1
+    mi = (li + hi) // 2
+    if array[mi] == target:
+        return mi
+    elif array[mi] > target:
+        return recur_binary_search(array, target, mi + 1, hi)
+    else:
+        return recur_binary_search(array, target, li, mi - 1)
