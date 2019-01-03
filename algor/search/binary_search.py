@@ -14,7 +14,7 @@ Complexity: O(log n)
             hi = mi - 1
         else:
             li = mi + 1
-    return None
+    return -1
 
 
 def recur_binary_search(array, target, li, hi):
