@@ -29,6 +29,6 @@ Complexity: O(log n)
     if array[mi] == target:
         return mi
     elif array[mi] > target:
-        return recur_binary_search(array, target, mi + 1, hi)
-    else:
         return recur_binary_search(array, target, li, mi - 1)
+    else:
+        return recur_binary_search(array, target, mi + 1, hi)
