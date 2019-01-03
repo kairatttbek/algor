@@ -20,3 +20,7 @@ class TestSuit(unittest.TestCase):
         self.assertEqual(11, recur_binary_search(array, 6, 0, 11))
         self.assertEqual(-1, recur_binary_search(array, 7, 0, 11))
         self.assertEqual(-1, recur_binary_search(array, -1, 0, 11))
+
+
+if __name__ == '__main__':
+    unittest.main()
