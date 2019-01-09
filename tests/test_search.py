@@ -23,7 +23,7 @@ class TestSuit(unittest.TestCase):
         self.assertEqual(-1, recur_binary_search(array, 7, 0, 11))
         self.assertEqual(-1, recur_binary_search(array, -1, 0, 11))
 
-    def test_liner_search(self):
+    def test_linear_search(self):
         array = [1, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 6, 6, 6]
         self.assertEqual(6, linear_search(array, 4))
         self.assertEqual(10, linear_search(array, 5))
