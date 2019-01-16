@@ -1,8 +1,7 @@
 def binary_search(array, target):
     """
-Iterative binary search
-
-Complexity: O(log n)
+    Iterative binary search
+    Complexity: O(log n)
     """
     li, hi = 0, len(array) - 1
     while li <= hi:
@@ -19,9 +18,8 @@ Complexity: O(log n)
 
 def recur_binary_search(array, target, li, hi):
     """
-Recursive binary search
-
-Complexity: O(log n)
+    Recursive binary search
+    Complexity: O(log n)
     """
     if li > hi:
         return -1
