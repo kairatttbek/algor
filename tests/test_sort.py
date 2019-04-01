@@ -22,9 +22,14 @@ class TestSuit(unittest.TestCase):
         )
 
     def test_merge_sort(self):
+        test_arr = [1, 5, 65, 23, 57, 1232]
+        result_arr = [1, 5, 23, 57, 65, 1232]
+
+        merge_sort(test_arr)
+
         self.assertEqual(
-            [1, 5, 23, 57, 65, 1232],
-            merge_sort([1, 5, 65, 23, 57, 1232])
+            result_arr,
+            test_arr
         )
 
 
